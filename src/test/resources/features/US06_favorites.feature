@@ -9,7 +9,7 @@ Feature: As a user, I should be able to remove files from favorites and upload a
     And user choose the "Remove from favorites" option
     And user click the "Favorites" sub-module on the left side
     Then Verify that the file is removed from the Favorites sub-module’s table
-    And we are push
+
 
 
 
