@@ -1,15 +1,21 @@
 package com.cloud.step_definitions;
 
+import com.cloud.pages.LoginPage;
+import com.cloud.utilities.Driver;
 import io.cucumber.java.en.*;
 
 public class US06_stepDefinitions {
+    LoginPage loginPage = new LoginPage();
     @Given("user on the dashboard page")
     public void user_on_the_dashboard_page() {
-
+        Driver.getDriver().get("http://qa3.trycloud.net/index.php/login?clear=1");
+        loginPage.login();
     }
+
 
     @When("the user clicks the {string} module")
     public void the_user_clicks_the_module(String string) {
+
 
     }
 
