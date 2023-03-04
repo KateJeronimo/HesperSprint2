@@ -12,7 +12,7 @@ Feature:Feature: As a user, I should be able to log in.
       | user34 | Userpass123 |
       | user99 | Userpass123 |
 
-# this is after I have deleted.Business Need: Chingz needs to smile more!
+# this is after I have deleted.Business Need:
 
 
 
