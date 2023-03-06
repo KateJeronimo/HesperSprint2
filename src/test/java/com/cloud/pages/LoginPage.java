@@ -39,7 +39,7 @@ public class LoginPage {
 
     public void login(){
         this.inputUsernameOrEmail.sendKeys("User199");
-        this.inputPassword.sendKeys("UserPass123");
+        this.inputPassword.sendKeys("Userpass123");
         this.logInBtn.click();
     }
 
