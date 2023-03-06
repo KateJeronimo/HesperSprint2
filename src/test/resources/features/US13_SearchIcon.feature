@@ -6,3 +6,6 @@ Agile story: As a user, I should be able to search any item/ users from the sear
 
   Scenario: Search functionality
     Given user is logged in and on Files page
+    When user clicks on the Search icon
+    And user searches for one of the files from Files page
+    Then user should see the file in the search results
