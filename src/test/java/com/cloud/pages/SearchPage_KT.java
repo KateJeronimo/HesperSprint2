@@ -1,6 +1,6 @@
 package com.cloud.pages;
 
-public class ContactsPage_KT {
+public class SearchPage_KT {
 
     // Kate's user story
 }
