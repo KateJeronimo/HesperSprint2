@@ -24,5 +24,4 @@ public class SearchPage_KT {
     @FindBy(xpath = "//input[@type='search']")
     public WebElement searchBox;
 
-
 }
