@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         plugin = {
                 "html:target/cucumber-reports.html",
                 "rerun:target/rerun.txt",
-                "me.jvt.cucumber.report.PrettyReports:target/cucumber"
+               // "me.jvt.cucumber.report.PrettyReports:target/cucumber"
         },
         features = "src/test/resources/features",
         glue = "com/project_name/step_definitions",
@@ -19,3 +19,4 @@ import org.junit.runner.RunWith;
 )
 public class CukesRunner {}
 
+// 06MAR2023 at 2302
