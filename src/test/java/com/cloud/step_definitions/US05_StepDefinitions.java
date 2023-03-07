@@ -1,13 +1,19 @@
 package com.cloud.step_definitions;
 
+import com.cloud.pages.LoginPage;
+import com.cloud.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class US05_StepDefinitions {
 
+LoginPage loginPage = new LoginPage();
+
     @Given("the user is logged in")
     public void the_user_is_logged_in() {
+        Driver.getDriver().get("https://qa3.trycloud.net/index.php/login?clear=1");
+        loginPage.login();
 
     }
 
@@ -37,4 +43,7 @@ public class US05_StepDefinitions {
     }
 
 
+    @When("the user clicks action-icon from any file on the page")
+    public void theUserClicksActionIconFromAnyFileOnThePage() {
+    }
 }

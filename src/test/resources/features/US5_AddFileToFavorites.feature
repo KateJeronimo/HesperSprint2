@@ -1,13 +1,11 @@
-#Toma's US, As a user, I should be able to add file to favorites.
-  Feature: This is my US
+Feature: As a user, I should be able to access to Files module - Favorites button
 
-    Scenario: As a user, I should be able add file to favorites.
-      Given the user is logged in
-      And the user is on the "My Files" page
-      When the user selects a file
-      And clicks the "Add to Favorites" button
-      Then the file should be added to the user's favorites list
-      And the user should see a confirmation message
+  Scenario: Verify users to add files to Favorites
+    Given user on the dashboard page
+    When the user clicks the "Files" module
+    When the user clicks action-icon from any file on the page
+    And user choose the "Add to favorites" option
+
 
 
 
