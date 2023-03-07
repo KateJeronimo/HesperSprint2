@@ -25,7 +25,7 @@ public class LoginPage {
     public WebElement forgotPasswordLink;
 
     @FindBy(xpath = "//p[@class='info']/a")
-    public WebElement tryCloudQALink;
+    public WebElement symundQALink;
 
     @FindBy(xpath = "(//div)[6]/a[2]")
     public WebElement getLogInWithDeviceLink;
@@ -38,8 +38,8 @@ public class LoginPage {
     public WebElement showPasswordIconBtn;
 
     public void login(){
-        this.inputUsernameOrEmail.sendKeys("User199");
-        this.inputPassword.sendKeys("Userpass123");
+        this.inputUsernameOrEmail.sendKeys("User10");
+        this.inputPassword.sendKeys("UserPass123");
         this.logInBtn.click();
     }
 
