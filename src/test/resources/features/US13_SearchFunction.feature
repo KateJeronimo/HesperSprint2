@@ -4,6 +4,7 @@ Feature: Search feature
 
   Agile story: As a user, I should be able to search any item/ users from the search icon.
 
+  @Kate
   Scenario: Search functionality
     Given user is logged in with valid credentials
     When user is on Files page
