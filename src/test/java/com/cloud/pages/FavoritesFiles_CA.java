@@ -24,6 +24,12 @@ public class FavoritesFiles_CA {
     @FindBy(xpath="//span[.='Add to favorites']")
     public WebElement addToFavorites;
 
+
+
+    @FindBy(xpath = "//a[@class='nav-icon-favorites svg']")
+    public WebElement favoriteLeft;
+    @FindBy(xpath = "//span[.='Remove from favorites']")
+    public WebElement removeFavorite;
 }
 
 

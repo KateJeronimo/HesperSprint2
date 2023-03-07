@@ -2,6 +2,7 @@ package com.cloud.step_definitions;
 
 import com.cloud.pages.FavoritesFiles_CA;
 import com.cloud.pages.LoginPage;
+import com.cloud.utilities.BrowserUtils;
 import com.cloud.utilities.Driver;
 import io.cucumber.java.en.*;
 
@@ -30,12 +31,14 @@ public class US06_stepDefinitions {
 
     @When("user choose the {string} option")
     public void user_choose_the_option(String string) {
-        favoritesFiles_ca.addToFavorites.click();
+       // favoritesFiles_ca.addToFavorites.;
 
     }
 
     @When("user click the {string} sub-module on the left side")
     public void user_click_the_sub_module_on_the_left_side(String string) {
+      favoritesFiles_ca.favoriteLeft.isDisplayed();
+
 
     }
 
