@@ -1,6 +1,8 @@
 package com.cloud.pages;
 
 public class ChingzStepDef {
+    /*
+}
 
     package com.cloud.step_definitions;
 
@@ -37,4 +39,6 @@ import io.cucumber.java.en.*;
             favoritesFiles_ca.addToFavorites.click();
 
         }
+
+     */
 }
