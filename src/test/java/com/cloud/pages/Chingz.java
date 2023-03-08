@@ -1,7 +1,7 @@
 package com.cloud.pages;
 
 public class Chingz {
-
+/*
     package com.cloud.pages;
 
 import com.cloud.utilities.Driver;
@@ -28,5 +28,5 @@ import org.openqa.selenium.support.PageFactory;
         @FindBy(xpath="//span[.='Add to favorites']")
         public WebElement addToFavorites;
 
-    }
+    }*/
 }
