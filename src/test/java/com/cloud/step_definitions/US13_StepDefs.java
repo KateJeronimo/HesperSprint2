@@ -19,8 +19,8 @@ public class US13_StepDefs {
 
     @Given("user is logged in with valid credentials")
     public void user_Is_Logged_In_With_Valid_Credentials() {
-        Driver.getDriver().get(ConfigurationReader.getProperty("website"));
-        loginPage.login(ConfigurationReader.getProperty("userName"),ConfigurationReader.getProperty("userPassword"));
+        //Driver.getDriver().get(ConfigurationReader.getProperty("website"));
+        loginPage.login();
     }
 
 
