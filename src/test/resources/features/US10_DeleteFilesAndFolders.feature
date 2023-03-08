@@ -1,5 +1,5 @@
 
-US10: As a user, I should be able to update settings
+Feature:  As a user, I should be able to update settings
 
   Scenario:  Verify user can delete files/folders
 
