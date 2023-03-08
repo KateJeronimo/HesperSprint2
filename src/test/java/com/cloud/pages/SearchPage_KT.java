@@ -23,4 +23,8 @@ public class SearchPage_KT {
 
     @FindBy(xpath = "//input[@type='search']")
     public WebElement searchBox;
+
+    @FindBy(xpath = "//h3[@class='unified-search__result-line-one']")
+    public WebElement result;
+
 }
