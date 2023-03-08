@@ -25,7 +25,7 @@ public class LoginPage {
     public WebElement forgotPasswordLink;
 
     @FindBy(xpath = "//p[@class='info']/a")
-    public WebElement tryCloudQALink;
+    public WebElement symundQALink;
 
     @FindBy(xpath = "(//div)[6]/a[2]")
     public WebElement getLogInWithDeviceLink;

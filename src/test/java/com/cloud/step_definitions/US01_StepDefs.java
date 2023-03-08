@@ -5,7 +5,7 @@ import com.cloud.utilities.BrowserUtils;
 import com.cloud.utilities.Driver;
 import io.cucumber.java.en.*;
 
-public class US01_StepDef {
+public class US01_StepDefs {
 
     @Given("user is log in page")
     public void userIsLogInPage() {
@@ -15,7 +15,7 @@ public class US01_StepDef {
 
     @When("user enters username")
     public void userEntersUsername() {
-        loginPage.inputUsernameOrEmail.sendKeys("user10");
+        loginPage.inputUsernameOrEmail.sendKeys("user223");
 
 
     }
