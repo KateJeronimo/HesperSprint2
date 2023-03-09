@@ -18,6 +18,18 @@ public class FavoritesFiles_CA {
     @FindBy(xpath = "//a[@class='action action-menu permanent']")
     public WebElement actionIcon;
 
+    @FindBy(xpath = "//div[@class='favorite-mark permanent']")
+    public WebElement star;
+
+
+
+
+    @FindBy(xpath = "//a[@class='nav-icon-favorites svg']")
+     public WebElement favorites;
+
+    @FindBy(xpath = "//span[.='Remove from favorites']")
+    public WebElement removeFav;
+
     @FindBy(xpath = "//a[@class='menuitem action action-favorite permanent']")
     public WebElement deleteFavorites;
 
