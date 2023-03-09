@@ -19,7 +19,7 @@ public class US06_stepDefinitions {
     }
 
 
-    @When("the user clicks the {string} module")
+    @When("The User clicks the {string} module")
     public void the_user_clicks_the_module(String files) {
     //favoritesFiles_ca.files.click();
         favoritesFiles_ca.files.sendKeys(files+ Keys.ENTER);
@@ -50,6 +50,6 @@ public class US06_stepDefinitions {
 
     @Then("Verify that the file is removed from the Favorites sub-module’s table")
     public void verify_that_the_file_is_removed_from_the_favorites_sub_module_s_table() {
-favoritesFiles_ca.removeFav.isDisplayed();
+    favoritesFiles_ca.removeFav.isDisplayed();
     }
 }
