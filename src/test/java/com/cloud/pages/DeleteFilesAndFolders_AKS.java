@@ -23,13 +23,13 @@ public class DeleteFilesAndFolders_AKS {
     @FindBy(xpath = "(//a[@class= 'action action-menu permanent'])[1]")
     public WebElement actionIcon;
 
-    // go to Delete Folder option on specific file
+    // go to Delete Folder option on specific file - in my scenario, I am choosing the first folder on the page
 
-    @FindBy(xpath = "(//span[@class=\"innernametext\"])[1]")
-    public WebElement firstFolder;
+    @FindBy(xpath = "(//td[@class='filename ui-draggable ui-draggable-handle'])[1]")
+    public WebElement folderName; //specific file
 
-    // does the object below go on this page or ???
-    String fileName = Driver.getDriver().findElement((By) firstFolder).getText();
+
+
 
     @FindBy(xpath = "(//span[@class= 'icon icon-delete'])[1]")
     public WebElement deleteFolder;
@@ -38,6 +38,10 @@ public class DeleteFilesAndFolders_AKS {
 
     @FindBy(xpath = "(//a[@class= 'nav-icon-trashbin svg active'])")
     public WebElement deletedFilesPage;
+
+    // verify deleted folder is displayed on the page
+
+
 
 
 
