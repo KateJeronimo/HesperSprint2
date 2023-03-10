@@ -29,7 +29,6 @@ public class DeleteFilesAndFolders_AKS {
    @FindBy(xpath = "(//td[@class='filename ui-draggable ui-draggable-handle'])[1]")
     public WebElement folderName; //specific file
 
-   // String expectedFolderName = folderName.getText();  // for verification later
 
 
     @FindBy(xpath = "(//a[@class= 'menuitem action action-delete permanent'])")

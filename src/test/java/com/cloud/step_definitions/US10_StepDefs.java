@@ -51,12 +51,14 @@ public class US10_StepDefs {
     @Then("verify the deleted file is displayed on the page")
     public void verify_the_deleted_file_is_displayed_on_the_page() {
 
+        Assert.assertTrue(deleteFilesAndFolders_aks.folderNameInDeletedFilesPage.isDisplayed());
+
     //    String expectedFolderName = deleteFilesAndFolders_aks.folderName.getText();
     //    String actualFolderName = deleteFilesAndFolders_aks.folderNameInDeletedFilesPage.getText();
 
        // Assert.assertTrue(actualFolderName, expectedFolderName, "Verification failed!");
 
-        Assert.assertTrue(deleteFilesAndFolders_aks.folderNameInDeletedFilesPage.isDisplayed());
+
 
       //  Assert.assertTrue(deleteFilesAndFolders_aks.folderName.isDisplayed());
 
