@@ -18,13 +18,10 @@ public class US10_StepDefs {
 
     DeleteFilesAndFolders_AKS deleteFilesAndFolders_aks = new DeleteFilesAndFolders_AKS();
 
-    WebElement firstFolder = Driver.getDriver().findElement(By.xpath("(//td[@class='filename ui-draggable ui-draggable-handle'])[1]"));
-
-    String fileName = Driver.getDriver().findElement((By) firstFolder).getText();
 
     @Given("when the user is on the dashboard page")
     public void when_the_user_is_on_the_dashboard_page() {
-
+     //   Driver.getDriver().get("http://qa3.trycloud.net/index.php/login?clear=1");
        loginPage.login();
     }
     @When("the user clicks on the Files module on the top of the screen")
@@ -54,8 +51,17 @@ public class US10_StepDefs {
     @Then("verify the deleted file is displayed on the page")
     public void verify_the_deleted_file_is_displayed_on_the_page() {
 
-      // String deletedFolder = DeleteFilesAndFolders_AKS.folderName.getText();
+    //    String expectedFolderName = deleteFilesAndFolders_aks.folderName.getText();
+    //    String actualFolderName = deleteFilesAndFolders_aks.folderNameInDeletedFilesPage.getText();
 
-      Assert.assertTrue(fileName, firstFolder.isDisplayed());
+       // Assert.assertTrue(actualFolderName, expectedFolderName, "Verification failed!");
+
+        Assert.assertTrue(deleteFilesAndFolders_aks.folderNameInDeletedFilesPage.isDisplayed());
+
+      //  Assert.assertTrue(deleteFilesAndFolders_aks.folderName.isDisplayed());
+
+    //  String deletedFolder = DeleteFilesAndFolders_AKS.folderName.getText();
+
+   // Assert.assertTrue(DeleteFilesAndFolders_AKS.folderName.getText().isDisplayed());
     }
 }

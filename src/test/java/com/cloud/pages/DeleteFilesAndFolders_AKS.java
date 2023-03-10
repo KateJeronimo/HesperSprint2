@@ -18,28 +18,32 @@ public class DeleteFilesAndFolders_AKS {
     @FindBy(xpath = "(//li[@data-id='files'])[1]")
     public WebElement filesPage;
 
-    // go to Action Icon
+    // go to Action Icon on first folder
 
     @FindBy(xpath = "(//a[@class= 'action action-menu permanent'])[1]")
     public WebElement actionIcon;
 
-    // go to Delete Folder option on specific file - in my scenario, I am choosing the first folder on the page
 
-    @FindBy(xpath = "(//td[@class='filename ui-draggable ui-draggable-handle'])[1]")
+    // go to Delete Folder option
+
+   @FindBy(xpath = "(//td[@class='filename ui-draggable ui-draggable-handle'])[1]")
     public WebElement folderName; //specific file
 
+   // String expectedFolderName = folderName.getText();  // for verification later
 
 
-
-    @FindBy(xpath = "(//span[@class= 'icon icon-delete'])[1]")
-    public WebElement deleteFolder;
+    @FindBy(xpath = "(//a[@class= 'menuitem action action-delete permanent'])")
+    public WebElement deleteFolder; // locator to click to delete
 
     // go to Deleted Files page
 
-    @FindBy(xpath = "(//a[@class= 'nav-icon-trashbin svg active'])")
+    @FindBy(xpath = "(//a[@class='nav-icon-trashbin svg'])")
     public WebElement deletedFilesPage;
 
     // verify deleted folder is displayed on the page
+
+    @FindBy(xpath = "(//a[@class= 'name'])[last()]")
+    public WebElement folderNameInDeletedFilesPage;
 
 
 
