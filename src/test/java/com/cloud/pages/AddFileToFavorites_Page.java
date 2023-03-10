@@ -14,12 +14,14 @@ public class AddFileToFavorites_Page{
   @FindBy(xpath = "(//li[@data-id='files'])[1]")
     public WebElement files;
 
-  //@FindBy(xpath = )
+  //@FindBy(xpath = "//span[@class='icon icon-more'] ")
   //public WebElement actionIcon;
 
   @FindBy(xpath = "//a[@class='menuitem action action-favorite permanent' ]/span[1]")
   public WebElement addToFavorites;
 
 
+  @FindBy(xpath = "//href[@class='favorites']")
+  public WebElement displayFavoritesList;
 
  }
