@@ -18,7 +18,7 @@ import java.time.Duration;
 
 public class Driver {
 
-    // with Selenium Grid execution and no parallel browsers:
+    // with Selenium Grid execution and no parallel browsers ("remote-chrome" is specified in Maven-SGrid runner):
 
     static String browser;
 
@@ -39,7 +39,7 @@ public class Driver {
                 case "remote-chrome":
                     try {
                         // assign your grid server address
-                        String gridAddress = "54.88.195.178";
+                        String gridAddress = "34.228.156.78";
                         URL url = new URL("http://" + gridAddress + ":4444/wd/hub");
                         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
                         desiredCapabilities.setBrowserName("chrome");
