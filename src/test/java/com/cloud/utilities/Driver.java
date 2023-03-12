@@ -18,7 +18,7 @@ import java.time.Duration;
 
 public class Driver {
 
-    // with Selenium Grid execution and no parallel browsers ("remote-chrome" is specified in Maven-SGrid runner):
+// with Selenium Grid execution and no parallel browsers ("remote-chrome" is specified in Maven-SGrid runner - DON'T change in config.prop):
 
     static String browser;
 
