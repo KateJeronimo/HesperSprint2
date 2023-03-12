@@ -1,6 +1,6 @@
 
 Feature:  As a user, I should be able to delete files/folders
-
+@crap
   Scenario:  Verify user can delete files/folders
 
   Given when the user is on the dashboard page
